@@ -2,7 +2,7 @@
 
 ## My process of creating LockYourStuff
 
-I always start with out thinking the whole system. You should think about 
+I always start with planning the whole system. You should think about 
 the layout of the classes and packages. 
 
 After I planned the layout I start with coding of the core of the system. In this case
