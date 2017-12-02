@@ -1,0 +1,12 @@
+name: LockYourStuff
+main: net.planckton.lock.Lock
+version: 0.0.0.1
+version.major: 0
+version.minor: 0
+version.patch: 0
+version.build: 1
+commands:
+    lock:
+        description: lock your stuff
+    unlock:
+        description: unlock your stuff
