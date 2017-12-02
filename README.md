@@ -1,8 +1,6 @@
 # LockYourStuff
 
-```
-
-My process of creating LockYourStuff
+## My process of creating LockYourStuff
 
 I always start with out thinking the whole system. You should think about 
 the layout of the classes and packages. 
@@ -29,11 +27,3 @@ things that were usefull and nice to have. I added sounds, subcommands and warni
 The whole plugin is practically done and again I fully tested it.
 
 As you can see I create my plugin in steps and after each step is finished I test the plugin.
-
-```
-
-
- 
-
-
-
