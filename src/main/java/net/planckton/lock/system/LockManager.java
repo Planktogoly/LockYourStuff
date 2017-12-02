@@ -19,6 +19,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.permissions.Permission;
 
 import net.md_5.bungee.api.chat.BaseComponent;
 import net.md_5.bungee.api.chat.ComponentBuilder;
@@ -119,7 +120,7 @@ public class LockManager implements Listener {
 		
 		if (uuid == null) return;
 		if (uuid.toString().equals(player.getUniqueId().toString())) return;		
-		if (player.hasPermission("lock.use.locked")) return;
+		if (player.hasPermission(new Permission("lock.use.locked"))) return;
 		
 		OfflinePlayer target = Bukkit.getOfflinePlayer(getOwner(block.getLocation()));
 		if (target == null) {

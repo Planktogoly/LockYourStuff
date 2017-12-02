@@ -9,6 +9,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.permissions.Permission;
 
 import net.planckton.lock.Lock;
 import net.planckton.lock.system.LockManager;
@@ -50,7 +51,7 @@ public class UnlockCommand implements CommandExecutor {
 			return false;
 		}
 		
-		boolean hasPermission = player.hasPermission("lock.use.locked");
+		boolean hasPermission = player.hasPermission(new Permission("lock.use.locked"));
 		
 		if (!player.getUniqueId().equals(lockManager.getOwner(block.getLocation())) && !hasPermission) {
 			player.sendMessage(ChatColor.RED + "This is not your " + 
