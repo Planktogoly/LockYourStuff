@@ -2,7 +2,7 @@
 
 ```
 
-## My process of creating LockYourStuff
+My process of creating LockYourStuff
 
 I always start with out thinking the whole system. You should think about 
 the layout of the classes and packages. 
